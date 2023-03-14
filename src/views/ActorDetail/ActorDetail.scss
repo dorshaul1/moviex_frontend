@@ -1,0 +1,82 @@
+@import "../../style/setup/variables";
+
+.actorDetail {
+    text-align: left;
+    padding: 30px 80px;
+    @media screen and (max-width: $tablet-screen) {
+        padding: 0 20px;
+    }
+    .actor-img {
+        margin-right: 60px;
+        height: 450px;
+        // margin-top: 20px;
+        @media screen and (max-width: $large-screen) {
+            height: 400px;
+        }
+        @media screen and (max-width: $tablet-screen) {
+            height: 350px;
+        }
+        @media screen and (max-width: $mobile-screen) {
+            width: 233px;
+            margin: 20px auto 40px auto;
+            // margin-bottom: 40px;
+        }
+    }
+    .default-image{
+        height: 450px;
+        width: 300px;
+        // margin-right: 60px;
+    }
+    // .actor-name{
+    //     margin: 20px 0;
+    // }
+    .title {
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: $clr3;
+        margin: 30px 0 10px 0;
+        align-self: flex-start;
+        @media screen and (max-width: $large-screen) {
+            font-size: 1rem;
+        }
+    }
+    .actor-title-container {
+        @media screen and (max-width: $mobile-screen) {
+            flex-direction: column;
+        }
+        .actor-information {
+            h1{
+                @media screen and (max-width: $large-screen) {
+                    font-size: 1.8rem;
+                }
+                @media screen and (max-width: $tablet-screen) {
+                    font-size: 1.6rem;
+                }
+            }
+            h4 {
+                font-weight: 400;
+                .age {
+                    color: $clr3;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    .actor-more-info {
+        .biography {
+            font-weight: 400;
+            font-size: 1rem;
+            color: $clr4;
+        }
+        .read-more {
+            color: $primary-clr;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        // .more-movies{
+            // height: 30px;
+        // }
+    }
+}
